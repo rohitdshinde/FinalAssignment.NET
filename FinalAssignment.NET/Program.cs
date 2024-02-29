@@ -11,8 +11,10 @@ namespace FinalAssignment.NET
         static void Main(string[] args)
         {
             Class1 p= new Class1();
-           // p.Q1();
-            p.Q2();
+            //p.Q1();
+            //p.Q2();
+            p.Q3();
+            //p.Q4();
            
         }
     }
