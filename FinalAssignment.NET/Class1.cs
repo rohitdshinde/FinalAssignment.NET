@@ -63,7 +63,47 @@ namespace FinalAssignment.NET
                 Console.WriteLine("number is not paildrome");
             }
         }
-        public void Q4()
+        public void Q5()
+        {
+            
+
+
+   
+            Console.Write("Enter a number to check if it's a palindrome: ");
+            int number = Convert.ToInt32(Console.ReadLine());
+
+            string numStr = number.ToString();
+            if (IsPalindrome(numStr, 0, numStr.Length - 1))
+            {
+                Console.WriteLine(number + " is a palindrome.");
+            }
+            else
+            {
+                Console.WriteLine(number + " is not a palindrome.");
+            }
+        
+
+        static bool IsPalindrome(string numStr, int start, int end)
+        {
+           
+            if (start >= end)
+                return true;
+
+           
+            if (numStr[start] == numStr[end])
+            {
+                
+                return IsPalindrome(numStr, start + 1, end - 1);
+            }
+            else
+            {
+                return false;
+            }
+        }
+    
+        }
+
+public void Q4()
         {
             try
             {
